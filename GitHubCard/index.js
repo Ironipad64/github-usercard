@@ -81,7 +81,7 @@ function panelMaker({ title }) {
   const card = document.createElement("div");
   const cardImage = document.createElement("img");
   const cardInfo = document.createElement("div");
-  const cardTitle = document.createElement("h3");
+  const cardName = document.createElement("h3");
   const cardUsername = document.createElement("p");
   const cardLocation = document.createElement("p");
   const cardProfileURL = document.createElement("p");
@@ -93,7 +93,7 @@ function panelMaker({ title }) {
 
   card.appendChild(cardImage);
   card.appendChild(cardInfo);
-  cardInfo.appendChild(cardTitle);
+  cardInfo.appendChild(cardName);
   cardInfo.appendChild(cardUsername);
   cardInfo.appendChild(cardLocation);
   cardInfo.appendChild(cardProfileURL);
@@ -101,6 +101,11 @@ function panelMaker({ title }) {
   cardInfo.appendChild(cardFollowing);
   cardInfo.appendChild(cardBio);
   //classname
+  card.classList.add("card");
+  cardInfo.classList.add("card-info");
+  cardName.classList.add("name");
+  cardUsername.classList.add("username");
+
 
   //textContext
 
